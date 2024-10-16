@@ -2,6 +2,7 @@ import { defineEventHandler, readBody } from 'h3'
 import nodemailer from 'nodemailer'
 
 export default defineEventHandler(async (event) => {
+  const config = useRuntimeConfig()
   const body = await readBody(event)
   
   // Validation côté serveur
@@ -11,20 +12,20 @@ export default defineEventHandler(async (event) => {
   
   // Configuration de Nodemailer
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT || '587'),
-    secure: process.env.SMTP_SECURE === 'true',
+    host: config.smtpHost,
+    port: parseInt(config.smtpPort || '587'),
+    secure: config.smtpSecure === 'true',
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      user: config.smtpUser,
+      pass: config.smtpPass,
     },
   })
 
   try {
     // Envoi de l'email
     await transporter.sendMail({
-      from: `"Formulaire de contact" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_EMAIL,
+      from: `"Formulaire de contact" <${config.smtpUser}>`,
+      to: config.contactEmail,
       subject: "Nouveau message de contact",
       text: `Nom: ${body.name}\nEmail: ${body.email}\nMessage: ${body.message}`,
       html: `<p><strong>Nom:</strong> ${body.name}</p>
@@ -38,4 +39,3 @@ export default defineEventHandler(async (event) => {
     return { status: 'error', message: 'Une erreur est survenue lors de l\'envoi du message.' }
   }
 })
-

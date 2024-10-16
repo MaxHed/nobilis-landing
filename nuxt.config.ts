@@ -11,4 +11,16 @@ export default defineNuxtConfig({
     },
   },
   
+  runtimeConfig: {
+    public: {
+      // Variables publiques accessibles côté client et serveur
+    },
+    // Variables privées accessibles uniquement côté serveur
+    smtpHost: process.env.SMTP_HOST,
+    smtpPort: process.env.SMTP_PORT,
+    smtpSecure: process.env.SMTP_SECURE,
+    smtpUser: process.env.SMTP_USER,
+    smtpPass: process.env.SMTP_PASS,
+    contactEmail: process.env.CONTACT_EMAIL,
+  },
 })
