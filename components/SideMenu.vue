@@ -8,9 +8,10 @@
             </button>
             <nav class="mt-16">
                 <ul class="space-y-6">
-                    <li><a href="#about" class="text-gold hover:text-white transition-colors uppercase tracking-wider text-2xl">À propos</a></li>
-                    <li><a href="#products" class="text-gold hover:text-white transition-colors uppercase tracking-wider text-2xl">Produits</a></li>
-                    <li><a href="#contact" class="text-gold hover:text-white transition-colors uppercase tracking-wider text-2xl">Contact</a></li>
+                    <li><a href="#" class="block py-2 hover:text-gold transition-colors">Accueil</a></li>
+                    <li><a href="#about" class="block py-2 hover:text-gold transition-colors">À propos</a></li>
+                    <li><a href="#products" class="block py-2 hover:text-gold transition-colors">Produits</a></li>
+                    <li><a href="#contact" class="block py-2 hover:text-gold transition-colors">Contact</a></li>
                 </ul>
             </nav>
         </div>

@@ -130,3 +130,16 @@ footer {
         width: 80%;
     }
 }
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-gold);
+}
+
+/* Si vous voulez que cela s'applique spécifiquement aux liens de navigation */
+nav a:hover {
+    color: var(--color-gold);
+}

@@ -9,7 +9,16 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backdropBlur: {
+        md: '12px',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backdropBlur: ['responsive'],
+    },
   },
   plugins: [],
 };
