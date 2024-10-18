@@ -32,6 +32,10 @@ h1, h2, h3 {
     background-color: var(--color-gold);
 }
 
+.border-gold {
+    border-color: var(--color-gold);
+}
+
 #header {
     background-color: transparent;
     transition: background-color 0.3s ease;

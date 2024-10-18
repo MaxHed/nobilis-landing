@@ -24,7 +24,7 @@ useHead({
   meta: [
     { name: 'description', content: 'Découvrez Nobilis Coutellerie, créateur de couteaux pliants haut de gamme. Des couteaux personnalisables, faits main avec des matériaux rares, pour un luxe unique. Explorez nos collections : Essentiel, Signature, et Héritage.' },
     { name: 'keywords', content: 'Nobilis Coutellerie, couteaux personnalisables, couteaux pliants, couteaux de luxe, artisanat français, couteaux haut de gamme, couteaux sur mesure, couteaux en édition limitée, gravures d\'artistes, matériaux rares, coutellerie de luxe' },
-  ],
+  ]
 })
 
 

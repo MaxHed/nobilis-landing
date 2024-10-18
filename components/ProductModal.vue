@@ -20,7 +20,7 @@
                 </h3>
                 <div class="mt-2">
                   <img :src="product.image" :alt="product.name" class="w-full h-64 object-cover mb-4 rounded">
-                  <p class="text-sm text-white">
+                  <p class="text-sm text-gray-300">
                     {{ product.longDescription }}
                   </p>
                 </div>
