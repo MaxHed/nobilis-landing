@@ -3,14 +3,13 @@
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl md:text-5xl font-bold mb-12 font-serif text-gold text-center">{{ t('productsTitle') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div v-for="(product, index) in products" :key="index" class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+        <div v-for="(product, index) in products" :key="index" 
+             class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+             @click="openModal(index)">
           <img :src="product.image" :alt="t(product.name)" class="w-full h-64 object-cover">
           <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2 text-gold">{{ t(product.name) }}</h3>
+            <h3 class="text-2xl font-bold mb-2 text-gold amsterdam-one">{{ t(product.name) }}</h3>
             <p class="text-gray-300 mb-4">{{ t(product.shortDescription) }}</p>
-            <button @click="openModal(index)" class="bg-gold text-black px-4 py-2 rounded hover:bg-white transition duration-300">
-              {{ t('discoverButton') }}
-            </button>
           </div>
         </div>
       </div>
@@ -64,10 +63,12 @@ const openModal = (index) => {
     longDescription: t(products.value[index].longDescription)
   };
   isModalOpen.value = true;
+  document.body.style.overflow = 'hidden'; // Bloquer le défilement
 };
 
 const closeModal = () => {
   isModalOpen.value = false;
+  document.body.style.overflow = ''; // Rétablir le défilement
 };
 </script>
 

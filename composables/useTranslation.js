@@ -21,21 +21,23 @@ const translations = {
     home: 'Accueil',
     productsTitle: "Nos Collections",
     discoverButton: "Découvrir",
+    disclaimerText: "Ce site représente une entreprise fictive dans le cadre d'un exercice de business plan pour un master UX/UI.",
+    createdBy: "Créé par",
     products: {
       classicCollection: {
-        name: "Collection Classique",
-        shortDescription: "Notre gamme de couteaux classiques allie élégance intemporelle et performance exceptionnelle.",
-        longDescription: "La Collection Classique incarne l'essence même de Nobilis Coutellerie. Chaque couteau est fabriqué avec précision, utilisant les meilleurs aciers et des manches en bois nobles. Parfaits pour un usage quotidien, ces couteaux offrent un équilibre parfait entre tradition et fonctionnalité moderne."
+        name: "Essentiel",
+        shortDescription: "Des couteaux pliants personnalisables ou pré-conçus, alliant simplicité et élégance pour un usage quotidien.",
+        longDescription: "La gamme Essentiel de Nobilis Coutellerie propose des couteaux pliants que vous pouvez personnaliser en sélectionnant les éléments souhaités, ou commander en version pré-conçue pour plus de rapidité. Ces couteaux sont pensés pour offrir une esthétique sobre, mais avec une qualité de fabrication impeccable. Les matériaux utilisés garantissent une longévité exceptionnelle, tout en assurant une prise en main agréable. Que vous choisissiez de personnaliser votre couteau ou d'opter pour un modèle prêt à l'emploi, la gamme Essentiel est idéale pour un usage quotidien sans compromis sur le style et la fonctionnalité."
       },
       professionalSeries: {
-        name: "Série Professionnelle",
-        shortDescription: "Conçue pour les chefs exigeants, cette série offre précision et confort pour une expérience culinaire sans égal.",
-        longDescription: "Notre Série Professionnelle est le choix des chefs les plus exigeants. Ces couteaux sont forgés à partir d'acier haute performance, offrant une rétention de tranchant exceptionnelle. Ergonomiques et parfaitement équilibrés, ils sont conçus pour résister aux rigueurs des cuisines professionnelles tout en offrant une précision chirurgicale."
-      },
+        name: "Signature",
+        shortDescription: "Des couteaux en édition limitée, gravés avec des œuvres d’artistes renommés, utilisant des matériaux rares et précieux.",
+        longDescription: "La gamme Signature de Nobilis Coutellerie est dédiée aux collectionneurs et aux amateurs de couteaux d’exception. Chaque modèle de cette gamme est fabriqué en édition limitée et numérotée, avec des gravures d’œuvres réalisées par des artistes reconnus. Utilisant des matériaux rares, tels que l’acier damassé et des bois précieux, chaque couteau est une véritable œuvre d’art, conçue pour ceux qui apprécient l’exclusivité et le savoir-faire artisanal. Ces couteaux sont des pièces uniques, pensées pour durer et devenir des objets de collection prisés."
+      },      
       artisanalRange: {
-        name: "Gamme Artisanale",
-        shortDescription: "Notre collection faite main incarne l'excellence artisanale, chaque pièce étant unique et façonnée avec passion.",
-        longDescription: "La Gamme Artisanale représente le summum de notre savoir-faire. Chaque couteau est une pièce unique, façonnée à la main par nos maîtres couteliers. Utilisant des matériaux rares et précieux, ces couteaux sont de véritables œuvres d'art fonctionnelles, alliant beauté exceptionnelle et performance inégalée."
+        name: "Héritage",
+        shortDescription: "Créez un couteau unique avec des matériaux rares, des gravures ou un guillochage personnalisé, pour une pièce qui vous ressemble.",
+        longDescription: " L'offre Héritage de Nobilis Coutellerie vous permet de concevoir un couteau entièrement personnalisé, allant au-delà des options disponibles dans l’offre classique. Vous pouvez choisir des matériaux spécifiques non proposés sur le site, ajouter des gravures, du guillochage ou toute autre finition détaillée. Ce service sur mesure s’adresse à ceux qui souhaitent créer une pièce vraiment unique, en collaborant avec nos artisans pour réaliser un couteau qui reflète leur goût personnel et leur créativité. Chaque couteau Héritage est conçu pour être transmis de génération en génération, un véritable héritage familial."
       }
     }
   },
@@ -55,21 +57,23 @@ const translations = {
     footerText: 'All rights reserved.',
     closeButton: 'Close',
     home: 'Home',
+    disclaimerText: "This site represents a fictitious company for a UX/UI master's exercise.",
+    createdBy: "Created by",
     products: {
       classicCollection: {
-        name: "Classic Collection",
-        shortDescription: "Our classic knife collection combines timeless elegance with exceptional performance.",
-        longDescription: "The Classic Collection embodies the essence of Nobilis Cutlery. Each knife is meticulously crafted with the finest materials and expert craftsmanship. Perfect for everyday use, these knives offer a perfect balance between tradition and modern functionality."
+        name: "Essentiel",
+        shortDescription: "Customizable or pre-designed folding knives, combining simplicity and elegance for everyday use.",
+        longDescription: "The Essentiel collection from Nobilis Coutellerie offers folding knives that can be customized by selecting specific components, or pre-designed for quick and easy ordering. These knives are designed to offer a simple yet refined aesthetic with impeccable craftsmanship. The materials used ensure exceptional durability while providing a comfortable grip. Whether you choose to personalize your knife or opt for a ready-made model, the Essentiel range is perfect for everyday use without compromising on style and functionality."
       },
       professionalSeries: {
-        name: "Professional Series",
-        shortDescription: "Designed for the most demanding chefs, this series offers precision and comfort for an unparalleled culinary experience.",
-        longDescription: "Our Professional Series is the choice of the most demanding chefs. These knives are forged from high-performance steel, offering exceptional edge retention. Ergonomic and perfectly balanced, they are designed to withstand the rigors of professional kitchens while offering surgical precision."
+        name: "Signature",
+        shortDescription: "Limited edition knives engraved with artwork from renowned artists, crafted with rare and precious materials.",
+        longDescription: "The Signature range from Nobilis Coutellerie is dedicated to collectors and enthusiasts of exceptional knives. Each knife in this collection is produced in a limited and numbered edition, featuring engravings of works created by renowned artists. Using rare materials like damascus steel and exotic woods, each knife is a true masterpiece designed for those who value exclusivity and craftsmanship. These knives are unique pieces meant to last and become treasured collector’s items."
       },
       artisanalRange: {
         name: "Artisanal Range",
-        shortDescription: "Our handcrafted collection embodies artisan excellence, with each piece being unique and crafted with passion.",
-        longDescription: "The Artisanal Range represents the pinnacle of our craftsmanship. Each knife is a unique piece, handcrafted by our master craftsmen. Using rare and precious materials, these knives are true functional works of art, combining exceptional beauty and unparalleled performance."
+        shortDescription: "Create a unique knife with rare materials, custom engravings, or intricate guillochage, for a piece that truly reflects your identity.",
+        longDescription: "The Héritage offer from Nobilis Coutellerie allows you to design a fully personalized knife, beyond the options available in the classic range. You can select specific materials not featured on the site, add custom engravings, guillochage, or other detailed finishes. This bespoke service is for those who wish to create a truly unique piece, working closely with our artisans to craft a knife that reflects their personal taste and creativity. Each Héritage knife is designed to be passed down through generations, becoming a true family heirloom."
       }
     }
   }
